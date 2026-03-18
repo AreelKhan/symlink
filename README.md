@@ -1,6 +1,6 @@
-# Symlinked
+# Symlink
 
-Symlinked is a context management tool. It is the place you dump anything on your mind, and Symlink makes it instantly searchable, and surfaces the right things at the right times.
+Symlink is a context management tool. It is the place you dump anything on your mind, and Symlink makes it instantly searchable, and surfaces the right things at the right times.
 
 I am building this for _myself_. Hence, it will be tailored to exactly how I want it. Since everyone's brain works differently, there is a good chance I am the only person in the world that will find this useful. But that's good enough, since, again, I am building this for myself.
 
@@ -10,7 +10,7 @@ Besides this section, pretty much everything in this README (as well as most of 
 
 ## What This Is
 
-Symlinked manages the context of your life. You tell it everything — tasks, reminders, blockers, notes, habits — and it holds that information, prioritizes it, and tells you what to focus on right now. When context changes ("I'm unblocked on X"), it recomputes priorities and tells you what shifted.
+Symlink manages the context of your life. You tell it everything — tasks, reminders, blockers, notes, habits — and it holds that information, prioritizes it, and tells you what to focus on right now. When context changes ("I'm unblocked on X"), it recomputes priorities and tells you what shifted.
 
 ### Core Use Cases
 
@@ -218,7 +218,7 @@ Projections are disposable and rebuildable. If the resolver logic changes, repla
 ## Project Structure
 
 ```
-symlinked/
+symlink/
 ├── apps/
 │   ├── desktop/          # Tauri 2 app (Mac + Android)
 │   │   ├── src/          # React frontend (shared with web)
