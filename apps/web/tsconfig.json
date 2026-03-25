@@ -2,6 +2,7 @@
 	"extends": "../../tsconfig.base.json",
 	"compilerOptions": {
 		"jsx": "react-jsx",
+		"incremental": true,
 		"noEmit": true
 	},
 	"include": ["src"]

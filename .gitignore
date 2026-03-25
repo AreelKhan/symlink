@@ -4,3 +4,6 @@ dist
 target
 **/src-tauri/gen
 *.tsbuildinfo
+*.log
+.env
+.env.*

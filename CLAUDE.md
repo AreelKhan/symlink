@@ -35,15 +35,16 @@ The owner is a new grad engineer building this as a long-term personal project (
 ```
 symlink/
 ├── apps/
-│   ├── desktop/          # Tauri 2 (Mac + Android)
+│   ├── desktop/          # Tauri 2 (Mac + Android)        ✅ scaffolded
 │   │   ├── src/          # React frontend
 │   │   └── src-tauri/    # Rust backend
-│   ├── web/              # Web app
-│   └── server/           # Bun + Hono API
+│   ├── web/              # Web app                        ✅ scaffolded
+│   └── server/           # Bun + Hono API                 🔲 planned
 ├── packages/
-│   ├── shared/           # Shared types, event definitions, HLC
-│   ├── sync/             # Sync protocol logic
-│   └── resolver/         # Priority resolver (runs on client + server)
+│   ├── shared/           # Shared types, event definitions, HLC  ✅ scaffolded
+│   ├── ui/               # Shared React components        ✅ scaffolded
+│   ├── sync/             # Sync protocol logic            🔲 planned
+│   └── resolver/         # Priority resolver (runs on client + server)  🔲 planned
 ├── CLAUDE.md
 ├── biome.json
 └── package.json

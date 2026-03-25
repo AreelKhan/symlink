@@ -7,3 +7,5 @@ pre-push:
   commands:
     biome-check:
       run: pnpm check
+    type-check:
+      run: pnpm type-check

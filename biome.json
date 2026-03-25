@@ -1,7 +1,13 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.8/schema.json",
 	"files": {
-		"includes": ["**", "!.claude", "!**/src-tauri/gen", "!**/src-tauri/target"]
+		"includes": [
+			"**",
+			"!.claude",
+			"!**/src-tauri/gen",
+			"!**/src-tauri/target",
+			"!**/dist"
+		]
 	},
 	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
