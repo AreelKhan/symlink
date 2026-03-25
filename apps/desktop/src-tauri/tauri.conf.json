@@ -6,13 +6,16 @@
 	"build": {
 		"frontendDist": "../dist",
 		"devUrl": "http://localhost:1420",
-		"beforeDevCommand": "pnpm dev",
-		"beforeBuildCommand": "pnpm build"
+		"beforeDevCommand": "vite",
+		"beforeBuildCommand": "vite build"
+	},
+	"bundle": {
+		"icon": ["icons/icon.png"]
 	},
 	"app": {
-		"title": "Symlink",
 		"windows": [
 			{
+				"title": "Symlink",
 				"label": "main",
 				"width": 1024,
 				"height": 768
