@@ -1,16 +1,18 @@
 # Symlink
 
-Symlink is a context management tool. It is where you dump anything on your mind, and Symlink makes it instantly searchable, structured, and surfaces the right things at the right times.
+Symlink is my second brain. Mental clutter slows me down. It's like running a 5k while holding grocery bags. Symlink is where I offload all that clutter. Symlink makes it instantly searchable, well-structured, and surfaces the right information at the right time. I trust that it will store and recall my thoughts the same way my brain would natively.
 
-I am building this for _myself_. Hence, it will be tailored to exactly how I want it. Since everyone's brain works differently, there is a good chance I am the only person in the world that will find this useful. But that's good enough, since, again, I am building this for myself.
+I am building this for _myself_. Hence, it will be tailored to exactly how I want it. Since everyone's brain works differently, there is a good chance I am the only person in the world that will find this useful. And that's good enough, since, again, I am building this for myself.
 
 I am drawing inspiration from tools like obsidian, linear, figma, uv, bun, railway, and more. Many of these tools I will be using in this project. I like lightweight, fast, aesthetic, and highly functional software. This project may help me learn how to build such software.
 
-Besides this section, pretty much everything in this README (as well as most of the code) is written by AI. Although though the idea and vision is my own, the AI is just so much better at putting words to them. The same can be said for the code.
+Besides this section, most of this README (and this repo as a whole) is written by AI. Although though the idea and vision is my own, AI is just so much better at putting words to them. The same can be said for the code.
 
 ## What This Is
 
-Symlink manages the context of your life. You tell it everything — tasks, reminders, blockers, notes, habits — and it holds that information, prioritizes it, and tells you what to focus on right now. When context changes ("I'm unblocked on X"), it recomputes priorities and tells you what shifted.
+Symlink manages the context of your life. You tell it everything — tasks, reminders, blockers, notes, habits, what you are doing, etc. It holds that information, prioritizes it, and tells you what to focus on right now. When context changes ("I'm unblocked on X"), it recomputes priorities and tells you what shifted.
+
+It helps you track your time, do more of what want to be doing, and less of what you often find yourself doing. It creates reminders that actually work. Not just time based ones.
 
 ### Core Use Cases
 
