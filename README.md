@@ -33,7 +33,7 @@ It helps you track your time, do more of what want to be doing, and less of what
 - **Multi-device**: Mac desktop app, web app, Android app. All synced.
 - **Searchable**: Cmd+K, type anything, see results as you type (not after hitting enter).
 - **Undoable**: Cmd+Z undoes any operation — yours or the AI's.
-- **Multi-user ready**: Although this is built for myself, and I expect to be the only user, it will be built to support any number of users.
+- **Multi-user ready**: Although this is built for myself, and I expect to be the only user, it will be built to support any number of users (within reason).
 
 ---
 
