@@ -1,6 +1,6 @@
 # Symlink
 
-Symlink is a context management tool. It is the place you dump anything on your mind, and Symlink makes it instantly searchable, and surfaces the right things at the right times.
+Symlink is a context management tool. It is where you dump anything on your mind, and Symlink makes it instantly searchable, structured, and surfaces the right things at the right times.
 
 I am building this for _myself_. Hence, it will be tailored to exactly how I want it. Since everyone's brain works differently, there is a good chance I am the only person in the world that will find this useful. But that's good enough, since, again, I am building this for myself.
 
