@@ -20,7 +20,7 @@ The owner is a new grad engineer building this as a long-term personal project (
 
 - **Desktop/mobile**: Tauri 2 (Rust backend + React webview)
 - **Frontend**: React + TypeScript + Tailwind CSS + shadcn/ui
-- **Client DB**: SQLite (embedded via Tauri/rusqlite, on web via WASM)
+- **Client DB**: SQLite (embedded via Tauri/rusqlite; web is online-only, no local DB)
 - **Server**: Bun + Hono (TypeScript)
 - **Server DB**: PostgreSQL
 - **Search**: Meilisearch (online), SQLite FTS5 (offline fallback)
@@ -49,6 +49,10 @@ symlink/
 ├── biome.json
 └── package.json
 ```
+
+## Decision Log
+
+All architectural and design decisions are tracked in [`ai/decision-log.md`](ai/decision-log.md). **Read this file before making suggestions that could conflict with prior decisions.** Use `/log-decision` to append new decisions.
 
 ## Key Design Decisions
 
