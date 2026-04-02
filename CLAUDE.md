@@ -20,7 +20,8 @@ The owner is a new grad engineer building this as a long-term personal project (
 
 - **Desktop/mobile**: Tauri 2 (Rust backend + React webview)
 - **Frontend**: React + TypeScript + Tailwind CSS + shadcn/ui
-- **Client DB**: SQLite (embedded via Tauri/rusqlite; web is online-only, no local DB)
+- **Client DB**: SQLite via Tauri SQL plugin, queried through Drizzle `sqlite-proxy`
+- **Client ORM**: Drizzle ORM — defines schemas, generates SQL, provides type safety. Uses `sqlite-proxy` driver to route queries through Tauri's SQL plugin over IPC to native rusqlite.
 - **Server**: Bun + Hono (TypeScript)
 - **Server DB**: PostgreSQL
 - **Search**: Meilisearch (online), SQLite FTS5 (offline fallback)
@@ -38,7 +39,7 @@ symlink/
 │   ├── desktop/          # Tauri 2 (Mac + Android)        ✅ scaffolded
 │   │   ├── src/          # React frontend
 │   │   └── src-tauri/    # Rust backend
-│   ├── web/              # Web app                        ✅ scaffolded
+│   ├── web/              # Web app                        🔲 deferred (decision #3)
 │   └── server/           # Bun + Hono API                 🔲 planned
 ├── packages/
 │   ├── shared/           # Shared types, event definitions, HLC  ✅ scaffolded
