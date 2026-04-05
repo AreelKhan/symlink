@@ -4,7 +4,7 @@
 
 Symlink is a personal context management system — a second brain that stores tasks, reminders, notes, blockers, and habits, then prioritizes and surfaces the right things at the right times. It has a natural language AI interface and supports multi-device sync with offline-first architecture.
 
-The owner is a new grad engineer building this as a long-term personal project (~10 hrs/week for a year). They are learning systems architecture through this project. They have no Rust experience and have basic TypeScript and React proficiency. They are comfortable with python. They want modern, fast tooling and are not afraid of complexity if it serves the architecture.
+The owner is a new grad engineer building this as a long-term personal project (~10 hrs/week for a few months). They are learning systems architecture through this project. They have no Rust experience and have basic TypeScript and React proficiency. They are comfortable with python. They want modern, fast tooling and are not afraid of complexity if it serves the architecture.
 
 ## Architecture Overview
 
@@ -30,26 +30,6 @@ The owner is a new grad engineer building this as a long-term personal project (
 - **Auth**: Clerk
 - **Linting/formatting**: Biome
 - **Hosting**: Railway
-
-## Monorepo Structure
-
-```
-symlink/
-├── apps/
-│   ├── desktop/          # Tauri 2 (Mac + Android)        ✅ scaffolded
-│   │   ├── src/          # React frontend
-│   │   └── src-tauri/    # Rust backend
-│   ├── web/              # Web app                        🔲 deferred (decision #3)
-│   └── server/           # Bun + Hono API                 🔲 planned
-├── packages/
-│   ├── shared/           # Shared types, event definitions, HLC  ✅ scaffolded
-│   ├── ui/               # Shared React components        ✅ scaffolded
-│   ├── sync/             # Sync protocol logic            🔲 planned
-│   └── resolver/         # Priority resolver (runs on client + server)  🔲 planned
-├── CLAUDE.md
-├── biome.json
-└── package.json
-```
 
 ## Decision Log
 

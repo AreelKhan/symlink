@@ -8,5 +8,3 @@ export {
 	HlcDriftError,
 	serializeHlc,
 } from "./hlc.js";
-export { events as pgEvents } from "./schema/pg.js";
-export { events } from "./schema/sqlite.js";
