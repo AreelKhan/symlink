@@ -25,11 +25,6 @@ The owner is a new grad engineer building this as a long-term personal project (
 - **Server**: Bun + Hono (TypeScript)
 - **Server DB**: PostgreSQL
 - **Search**: Meilisearch (online), SQLite FTS5 (offline fallback)
-- **Real-time**: WebSockets
-- **AI**: Claude API
-- **Auth**: Clerk
-- **Linting/formatting**: Biome
-- **Hosting**: Railway
 
 ## Decision Log
 
@@ -61,4 +56,4 @@ This side project serves two purposes:
 
 As the project progresses, no doubt the context above will go stale. Whenever you respond, consider if this context must be updated. Treat this file like a living piece of code.
 
-Phase 1 scaffolding is complete. The pnpm monorepo is set up with apps/web (Vite + React), apps/desktop (Tauri 2 + React), packages/shared, and packages/ui. Both apps render a shared `<Greeting>` component. Next step is implementing the core event store in packages/shared.
+Phase 1 scaffolding is complete. The pnpm monorepo is set up with apps/desktop (Tauri 2 + React), packages/shared, and packages/ui. The web app was removed per decision #3 — desktop/mobile (Tauri) only for now. Next step is implementing the core event store in packages/shared.
