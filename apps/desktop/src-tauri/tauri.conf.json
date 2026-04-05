@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/tauri-apps/tauri/dev/crates/tauri-cli/schema.json",
+	"productName": "Symlink",
+	"version": "0.0.0",
+	"identifier": "com.symlink.desktop",
+	"build": {
+		"frontendDist": "../dist",
+		"devUrl": "http://localhost:1420",
+		"beforeDevCommand": "vite",
+		"beforeBuildCommand": "vite build"
+	},
+	"bundle": {
+		"icon": ["icons/icon.png"]
+	},
+	"app": {
+		"windows": [
+			{
+				"title": "Symlink",
+				"label": "main",
+				"width": 1024,
+				"height": 768
+			}
+		],
+		"security": {
+			"csp": null
+		}
+	}
+}

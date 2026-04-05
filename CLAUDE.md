@@ -35,15 +35,16 @@ The owner is a new grad engineer building this as a long-term personal project (
 ```
 symlink/
 ├── apps/
-│   ├── desktop/          # Tauri 2 (Mac + Android)
+│   ├── desktop/          # Tauri 2 (Mac + Android)        ✅ scaffolded
 │   │   ├── src/          # React frontend
 │   │   └── src-tauri/    # Rust backend
-│   ├── web/              # Web app
-│   └── server/           # Bun + Hono API
+│   ├── web/              # Web app                        ✅ scaffolded
+│   └── server/           # Bun + Hono API                 🔲 planned
 ├── packages/
-│   ├── shared/           # Shared types, event definitions, HLC
-│   ├── sync/             # Sync protocol logic
-│   └── resolver/         # Priority resolver (runs on client + server)
+│   ├── shared/           # Shared types, event definitions, HLC  ✅ scaffolded
+│   ├── ui/               # Shared React components        ✅ scaffolded
+│   ├── sync/             # Sync protocol logic            🔲 planned
+│   └── resolver/         # Priority resolver (runs on client + server)  🔲 planned
 ├── CLAUDE.md
 ├── biome.json
 └── package.json
@@ -62,17 +63,17 @@ symlink/
 
 - **Runtime**: Bun (not Node)
 - **Linter/formatter**: Biome (not ESLint/Prettier)
-- **Package manager**: Bun's built-in package manager
+- **Package manager**: pnpm
 - **TypeScript**: Strict mode. Use modern, fast tooling even if beta.
 - **Keep it simple**: YAGNI. Don't add features, abstractions, or fields that aren't needed yet. Three similar lines > premature abstraction.
 - **Events are the source of truth**. Never mutate state directly. Always go through the event pipeline.
 
 # Important Conventions for any agent
 
-As the project progresses, no doubt the context above will go stale. Whenever you respond, consider if this context must be updated. Treat this file like a living piece of code.
-
-Currently, the project is in the architectural planning phase. No code has been written yet. The README documents all architectural decisions made so far. Next step is scaffolding the monorepo and implementing the core event store.
-
 This side project serves two purposes:
 1. Primarily, it will be product that the owner will use and depend on daily. It will have real usage. But it will likely only be used by a single person. Although it should be designed as if it is a real app for countless users. This is because of point 2
 2. Secondarily, this project is a way for the owner to learn new concepts. Desktop and mobile apps, distributed systems, offline first systems, event driven systems, websockets, etc. These are new and useful concepts.
+
+As the project progresses, no doubt the context above will go stale. Whenever you respond, consider if this context must be updated. Treat this file like a living piece of code.
+
+Phase 1 scaffolding is complete. The pnpm monorepo is set up with apps/web (Vite + React), apps/desktop (Tauri 2 + React), packages/shared, and packages/ui. Both apps render a shared `<Greeting>` component. Next step is implementing the core event store in packages/shared.
