@@ -8,7 +8,6 @@
 		]
 	},
 	"scripts": {
-		"dev:web": "pnpm --filter @symlink/web dev",
 		"dev:desktop": "pnpm --filter @symlink/desktop dev",
 		"build": "pnpm -r run build",
 		"type-check": "pnpm -r --parallel exec tsc --noEmit",
